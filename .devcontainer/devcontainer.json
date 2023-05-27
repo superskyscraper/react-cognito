@@ -4,19 +4,22 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-"remoteUser": "node",
-"features": {
-	"ghcr.io/devcontainers/features/aws-cli:1": {
-		"version": "latest"
-	},
-	"ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
-	"ghcr.io/devcontainers-contrib/features/less:2": {
-		"version": "latest"
-	},
-	"ghcr.io/devcontainers-contrib/features/tfcdk-cli:1": {
-		"version": "latest"
-	},
-	"ghcr.io/guiyomh/features/vim:0": {},
-	"postCreateCommand": "bash ./.devcontainer/init.sh"
-}
+	"remoteUser": "node",
+	"postCreateCommand": "bash ./.devcontainer/init.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
+		"ghcr.io/devcontainers-contrib/features/less:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/tfcdk-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/guiyomh/features/vim:0": {},
+		"ghcr.io/devcontainers/features/docker-in-docker": {
+			"version": "latest"
+		}
+	}
 }
